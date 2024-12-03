@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FBEEC1"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_load"
+        android:layout_width="283dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#DAAF"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:text="Загрузить фото"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="283dp"
+        android:layout_height="258dp"
+        android:layout_gravity="center"
+
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_add" />
+
+
+    <TextView
+        android:id="@+id/class_result"
+        android:layout_width="283dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#DAAF"
+        android:gravity="center"
+        android:text="Результат классификации"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/button_info"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#D5C72C"
+        android:text="Определить архитектурный стиль"
+        android:textColor="#8D8741"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/button_dop_info"
+        android:layout_width="283dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#8D8741"
+        android:text="Подробнее о стиле"
+        android:textColor="#D5C72C"
+        android:textSize="15sp" />
+
+</LinearLayout>
